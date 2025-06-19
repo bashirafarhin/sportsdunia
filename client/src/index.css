@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Optional: add this to help Tailwind background colors show */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global CSS - Add this to your main CSS file (e.g., index.css or App.css) */
+
+:root {
+  /* Light mode colors (default) */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f9fafb;
+  --text-primary: #1f2937;
+  --text-secondary: #6b7280;
+  --border-color: #d1d5db;
+  --accent-color: #2563eb;
+  --card-bg: #ffffff;
+  --input-bg: #ffffff;
+  --hover-bg: #f3f4f6;
+  
+  /* Shadow variables */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.dark {
+  /* Dark mode colors */
+  --bg-primary: #1f2937;
+  --bg-secondary: #374151;
+  --text-primary: #f9fafb;
+  --text-secondary: #d1d5db;
+  --border-color: #4b5563;
+  --accent-color: #3b82f6;
+  --card-bg: #374151;
+  --input-bg: #4b5563;
+  --hover-bg: #4b5563;
+  
+  /* Dark mode shadows */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.3);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.4), 0 2px 4px -2px rgb(0 0 0 / 0.4);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.4), 0 4px 6px -4px rgb(0 0 0 / 0.4);
+}
+
+/* Global styles using CSS variables */
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Custom utility classes using CSS variables */
+.bg-primary {
+  background-color: var(--bg-primary);
+}
+
+.bg-secondary {
+  background-color: var(--bg-secondary);
+}
+
+.text-primary {
+  color: var(--text-primary);
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.border-custom {
+  border-color: var(--border-color);
+}
+
+.bg-card {
+  background-color: var(--card-bg);
+}
+
+.bg-input {
+  background-color: var(--input-bg);
+}
+
+.hover-bg:hover {
+  background-color: var(--hover-bg);
+}
+
+.shadow-custom-sm {
+  box-shadow: var(--shadow-sm);
+}
+
+.shadow-custom-md {
+  box-shadow: var(--shadow-md);
+}
+
+.shadow-custom-lg {
+  box-shadow: var(--shadow-lg);
+}
+
+/* Smooth transitions for all elements */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
