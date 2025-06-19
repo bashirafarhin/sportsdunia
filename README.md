@@ -1,9 +1,3 @@
-# Responsive News Dashboard with Admin Payouts 💻📰
-
-This project is a responsive, role-based dashboard application that fetches news articles using the News API, supports offline viewing, and provides admin-only features such as payout calculation and data export.
-
----
-
 ## ✅ Features Implemented
 
 ### 1. 🔐 User Authentication
