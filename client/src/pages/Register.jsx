@@ -22,9 +22,11 @@ export default function Register() {
       );
       enqueueSnackbar("Registration successful", { variant: "success" });
       navigate("/");
-    } catch(error) {
-      const message = error.response?.data?.message || "Registration failed. Please try again.";
-      enqueueSnackbar( message, { variant: "error" });
+    } catch (error) {
+      const message =
+        error.response?.data?.message ||
+        "Registration failed. Please try again.";
+      enqueueSnackbar(message, { variant: "error" });
     }
   };
 
@@ -75,6 +77,11 @@ export default function Register() {
         >
           Toggle to {isDark ? "Light" : "Dark"} Mode
         </button>
+        <p className="mt-2 text-s text-center text-gray-500 dark:text-gray-400">
+          <strong>Note:</strong> Use <br />
+          <span className="font-mono">email-admin@admin.com</span> <br />
+          <span className="font-mono">password-admin</span> to login as admin.
+        </p>
       </form>
     </div>
   );

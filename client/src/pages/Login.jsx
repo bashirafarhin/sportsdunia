@@ -81,9 +81,9 @@ export default function Login() {
         >
           Toggle to {isDark ? "Light" : "Dark"} Mode
         </button>
-        <p className="mt-2 text-xs text-center text-gray-500 dark:text-gray-400">
-          <strong>Note:</strong> Use{" "}
-          <span className="font-mono">email-admin@admin.com</span> /{" "}
+        <p className="mt-2 text-s text-center text-gray-500 dark:text-gray-400">
+          <strong>Note:</strong> Use <br />
+          <span className="font-mono">email-admin@admin.com</span> <br />
           <span className="font-mono">password-admin</span> to login as admin.
         </p>
       </form>
